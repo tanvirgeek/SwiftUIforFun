@@ -3,23 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01D76EE270AA4D26A640312 /* Pods_ForFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA78EBAE26347AC1A088CDFF /* Pods_ForFun.framework */; };
+		EB0A2BE82556AEAC00D14533 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB0A2BE72556AEAC00D14533 /* GoogleService-Info.plist */; };
+		EB0A90B42557FC51000D0EE0 /* Girl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0A90B32557FC51000D0EE0 /* Girl.swift */; };
+		EB0A90B925580073000D0EE0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EB0A90B825580073000D0EE0 /* SDWebImageSwiftUI */; };
+		EB0A90BC25580094000D0EE0 /* GirlCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0A90BB25580094000D0EE0 /* GirlCard.swift */; };
+		EB2A45B32554EB5E0067ED23 /* IfaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2A45B22554EB5E0067ED23 /* IfaView.swift */; };
 		EB50399B25540267001326FC /* ForFunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50399A25540267001326FC /* ForFunApp.swift */; };
 		EB50399D25540267001326FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB50399C25540267001326FC /* ContentView.swift */; };
 		EB50399F25540267001326FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB50399E25540267001326FC /* Assets.xcassets */; };
 		EB5039A225540267001326FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5039A125540267001326FC /* Preview Assets.xcassets */; };
+		EB5039AC25540493001326FC /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5039AB25540493001326FC /* Menu.swift */; };
+		EB5039AF255404A9001326FC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5039AE255404A9001326FC /* Home.swift */; };
+		EB5039B72554074D001326FC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5039B62554074D001326FC /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2823DBC33ECD4E60E7AC4AD4 /* Pods-ForFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForFun.debug.xcconfig"; path = "Target Support Files/Pods-ForFun/Pods-ForFun.debug.xcconfig"; sourceTree = "<group>"; };
+		AA78EBAE26347AC1A088CDFF /* Pods_ForFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0A2BE72556AEAC00D14533 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB0A90B32557FC51000D0EE0 /* Girl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Girl.swift; sourceTree = "<group>"; };
+		EB0A90BB25580094000D0EE0 /* GirlCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GirlCard.swift; sourceTree = "<group>"; };
+		EB2A45B22554EB5E0067ED23 /* IfaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfaView.swift; sourceTree = "<group>"; };
 		EB50399725540267001326FC /* ForFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB50399A25540267001326FC /* ForFunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForFunApp.swift; sourceTree = "<group>"; };
 		EB50399C25540267001326FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB50399E25540267001326FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5039A125540267001326FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EB5039A325540267001326FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB5039AB25540493001326FC /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		EB5039AE255404A9001326FC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		EB5039B62554074D001326FC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FBE8D4196F709B8854776997 /* Pods-ForFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForFun.release.xcconfig"; path = "Target Support Files/Pods-ForFun/Pods-ForFun.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +46,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0A90B925580073000D0EE0 /* SDWebImageSwiftUI in Frameworks */,
+				D01D76EE270AA4D26A640312 /* Pods_ForFun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89CF8A233E89393AAF8338B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA78EBAE26347AC1A088CDFF /* Pods_ForFun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0CD7D11DB58660C09FFB236 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2823DBC33ECD4E60E7AC4AD4 /* Pods-ForFun.debug.xcconfig */,
+				FBE8D4196F709B8854776997 /* Pods-ForFun.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB0A90B22557FC29000D0EE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB0A90B32557FC51000D0EE0 /* Girl.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EB50398E25540267001326FC = {
 			isa = PBXGroup;
 			children = (
 				EB50399925540267001326FC /* ForFun */,
 				EB50399825540267001326FC /* Products */,
+				C0CD7D11DB58660C09FFB236 /* Pods */,
+				89CF8A233E89393AAF8338B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +100,10 @@
 		EB50399925540267001326FC /* ForFun */ = {
 			isa = PBXGroup;
 			children = (
+				EB0A90B22557FC29000D0EE0 /* Model */,
+				EB0A2BE72556AEAC00D14533 /* GoogleService-Info.plist */,
+				EB5039B1255406EC001326FC /* ViewModel */,
+				EB5039AA25540478001326FC /* View */,
 				EB50399A25540267001326FC /* ForFunApp.swift */,
 				EB50399C25540267001326FC /* ContentView.swift */,
 				EB50399E25540267001326FC /* Assets.xcassets */,
@@ -69,6 +121,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EB5039AA25540478001326FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB5039AB25540493001326FC /* Menu.swift */,
+				EB5039AE255404A9001326FC /* Home.swift */,
+				EB2A45B22554EB5E0067ED23 /* IfaView.swift */,
+				EB0A90BB25580094000D0EE0 /* GirlCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB5039B1255406EC001326FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EB5039B62554074D001326FC /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,15 +147,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB5039A625540267001326FC /* Build configuration list for PBXNativeTarget "ForFun" */;
 			buildPhases = (
+				C187043050253D071CFF4E57 /* [CP] Check Pods Manifest.lock */,
 				EB50399325540267001326FC /* Sources */,
 				EB50399425540267001326FC /* Frameworks */,
 				EB50399525540267001326FC /* Resources */,
+				70A799B9B5FC29650569959C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ForFun;
+			packageProductDependencies = (
+				EB0A90B825580073000D0EE0 /* SDWebImageSwiftUI */,
+			);
 			productName = ForFun;
 			productReference = EB50399725540267001326FC /* ForFun.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +188,9 @@
 				Base,
 			);
 			mainGroup = EB50398E25540267001326FC;
+			packageReferences = (
+				EB0A90B725580073000D0EE0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = EB50399825540267001326FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,18 +206,67 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB5039A225540267001326FC /* Preview Assets.xcassets in Resources */,
+				EB0A2BE82556AEAC00D14533 /* GoogleService-Info.plist in Resources */,
 				EB50399F25540267001326FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70A799B9B5FC29650569959C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForFun/Pods-ForFun-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ForFun/Pods-ForFun-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ForFun/Pods-ForFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C187043050253D071CFF4E57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForFun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB50399325540267001326FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5039AC25540493001326FC /* Menu.swift in Sources */,
+				EB0A90BC25580094000D0EE0 /* GirlCard.swift in Sources */,
 				EB50399D25540267001326FC /* ContentView.swift in Sources */,
+				EB5039AF255404A9001326FC /* Home.swift in Sources */,
+				EB0A90B42557FC51000D0EE0 /* Girl.swift in Sources */,
+				EB2A45B32554EB5E0067ED23 /* IfaView.swift in Sources */,
+				EB5039B72554074D001326FC /* HomeViewModel.swift in Sources */,
 				EB50399B25540267001326FC /* ForFunApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,10 +392,13 @@
 		};
 		EB5039A725540267001326FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2823DBC33ECD4E60E7AC4AD4 /* Pods-ForFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"ForFun/Preview Content\"";
 				DEVELOPMENT_TEAM = K924X73642;
 				ENABLE_PREVIEWS = YES;
@@ -286,10 +417,13 @@
 		};
 		EB5039A825540267001326FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBE8D4196F709B8854776997 /* Pods-ForFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"ForFun/Preview Content\"";
 				DEVELOPMENT_TEAM = K924X73642;
 				ENABLE_PREVIEWS = YES;
@@ -328,6 +462,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB0A90B725580073000D0EE0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB0A90B825580073000D0EE0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB0A90B725580073000D0EE0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB50398F25540267001326FC /* Project object */;
 }
