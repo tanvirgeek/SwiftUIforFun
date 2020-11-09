@@ -8,6 +8,7 @@
 import Foundation
 import CoreLocation
 import Firebase
+import SwiftUI
 
 class HomeViewModel:NSObject,ObservableObject,CLLocationManagerDelegate {
     @Published var showMenu = false
@@ -15,6 +16,8 @@ class HomeViewModel:NSObject,ObservableObject,CLLocationManagerDelegate {
     @Published var userLocation:CLLocation!
     @Published var userAddress = ""
     @Published var girls:[Girl] = []
+    @Published var filteredGirls:[Girl] = []
+    @Published var searchGirl = ""
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         switch manager.authorizationStatus {
@@ -79,7 +82,14 @@ class HomeViewModel:NSObject,ObservableObject,CLLocationManagerDelegate {
                 let girlImage = doc.get("girl_image") as! String
                 return Girl(id: id, girl_age: girlAge, girl_name: girlName, girl_image: girlImage, girl_rating: girlRating)
             })
-            
+            self.filteredGirls = self.girls
+        }
+    }
+    func filterData(){
+        withAnimation(.easeIn){
+            filteredGirls = girls.filter{
+                return $0.girl_name.lowercased().contains(self.searchGirl.lowercased())
+            }
         }
     }
 }

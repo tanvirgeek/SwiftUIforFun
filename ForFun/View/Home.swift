@@ -11,8 +11,9 @@ struct Home: View {
     @StateObject var homeVM = HomeViewModel()
     var body: some View {
         ZStack{
-            //Top bar
-            VStack{
+            
+            VStack(){
+                //Top bar
                 HStack{
                     Button(action:{
                         withAnimation(.easeIn){
@@ -30,12 +31,43 @@ struct Home: View {
                     Spacer()
                 }.padding()
                 
+                Divider()
+                HStack{
+                    TextField("Write girl's name", text: $homeVM.searchGirl)
+                    if(homeVM.searchGirl != ""){
+                        Button(action:{}, label:{
+                            Image(systemName: "magnifyingglass")
+                                .font(.title2)
+                                .foregroundColor(.gray)
+                        })
+                    }
+                }.padding(.horizontal)
+                .padding(.top,10)
+                Divider()
+                
                 // Scrollable Girls Card
                 ScrollView(){
                     LazyVStack{
-                        ForEach(homeVM.girls){ girl in
-                            GirlCard(girl: girl)
-                                .frame(width:UIScreen.main.bounds.width-30)
+                        ForEach(homeVM.filteredGirls){ girl in
+                            ZStack(alignment:Alignment(horizontal: .center, vertical: .top)){
+                                
+                                GirlCard(girl: girl)
+                                    .frame(width:UIScreen.main.bounds.width-30)
+                                
+                                HStack{
+                                    Text("Free Delivery")
+                                        .padding(10)
+                                        .font(.title2)
+                                        .background(Color.pink)
+                                    Spacer()
+                                    Image(systemName: "plus")
+                                        .font(.title2)
+                                        .padding(10)
+                                        .background(Color.pink)
+                                        .clipShape(Circle())
+                                }
+                            }
+                            
                         }
                     }
                 }
@@ -44,6 +76,18 @@ struct Home: View {
             }.padding()
             .onAppear{
                 homeVM.locationManager.delegate = homeVM
+            }.onChange(of: homeVM.searchGirl) { value in
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    if value == homeVM.searchGirl{
+                        homeVM.filterData()
+                    }
+                    if value == ""{
+                        withAnimation(.easeIn){
+                            homeVM.filteredGirls = homeVM.girls
+                        }
+                        
+                    }
+                }
             }
             
             //Sliding Menu
